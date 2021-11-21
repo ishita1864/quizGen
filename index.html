@@ -1,0 +1,88 @@
+<html>
+    	<head>
+        	<title>Website design1 </title>
+			<link rel = "stylesheet" href = "style.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- 
+			<script>
+				<button id="quiz" 
+    				onclick="window.location.href = 'http://127.0.0.1:5000/';"> 
+        			Quiz mate
+				</button> 		
+			</script> -->
+	</head>
+	<body>
+		<div class = "main">
+			<nav>
+				<div class = "logo">
+					<img src = "PesLogo.jpeg">
+		</div>
+	</nav>
+	
+	<div class = "pdf">
+		<h1>Welcome to the Quiz Generator</h1>
+		<br>
+		<p>The quiz generator allows you to upload a pdf, on which questions will be generated on each page.</p>
+		<p>It can be of 3 types - Fill in the blank questions, Multiple Choice Questions (MCQ's) or "Wh" type questions.</p>
+		<p>You will have to give your answer in a multiple choice format, i.e, you have to select one of the 4 options given to answer your question.</p><br><br><br>
+		<nav>
+		<p1>Upload the PDF:</p1>
+		</nav><nav>
+		<form>
+			<input type = "pdf" id = "mypdf" name = "pdfname">
+			<input id= "subbton" type = "button" value = "Submit">
+
+			<input id= "qbutton" type = "button" value = "Generate Questions">
+ 
+			<!-- <input id= "quiz" type = "button" value = "quizzzz"> -->
+			
+			<a href="http://127.0.0.1:5000/quiz">Visit quiz!</a> -->
+<!-- 
+			<button id="quiz" 
+    				onclick="window.location.href = 'http://127.0.0.1:5000/';"> 
+        			Quiz mate
+				</button> 		 -->
+
+
+
+		</form>
+		</nav><br>
+		
+		
+	</div>
+	</nav>
+	
+	</body>
+
+	<script>
+		$("#subbton").click(function(e) 
+		{ 
+			console.log("life sux");
+			// e.preventDefault();
+			$.ajax(
+					{ 	type: "GET",
+				 		url: "http://127.0.0.1:5000/convpdf", 
+						data: {}, 
+						success: function(result) { alert('PDF is converted to text!'); }, 
+						error: function(result) { alert('error'); }
+					 });
+		}
+		);
+
+
+		$("#qbutton").click(function(e) 
+		{ 
+			console.log("life sux pt 2");
+			// e.preventDefault();
+			$.ajax(
+					{ 	type: "GET",
+				 		url: "http://127.0.0.1:5000/genques", 
+						data: {}, 
+						success: function(result) { alert('Question Generated'); }, 
+						error: function(result) { alert('Error'); }
+					 });
+		}
+		);
+		</script>
+</html>
+        
