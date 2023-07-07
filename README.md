@@ -12,4 +12,4 @@ Design Details:
 
 ![Screenshot 2023-07-07 at 4 00 30 PM](https://github.com/ishita1864/quizGen/assets/62196026/bebaab09-b228-4746-90fb-fe0586a1ece9)
 
-![Screenshot 2023-07-07 at 4 01 01 PM](https://github.com/ishita1864/quizGen/assets/62196026/e05b4971-a24d-4ece-a836-e0a124702481)
+![Screenshot 2023-07-07 at 4 02 34 PM](https://github.com/ishita1864/quizGen/assets/62196026/d9948e14-acf1-4805-8c91-f3be8f019a28)
