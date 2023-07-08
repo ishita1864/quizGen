@@ -1,5 +1,5 @@
 # quizGen
-
+This project describes a tool created to help students with revision. It generates different types of questions based on the input PDF provided to help the students revise for an exam. It is accessed through a website.
 Project Abstract and Scope:
 
 ![Screenshot 2023-07-08 at 10 34 40 AM](https://github.com/ishita1864/quizGen/assets/62196026/e9b8b040-3e8f-4a7d-b375-46271c5346cc)
